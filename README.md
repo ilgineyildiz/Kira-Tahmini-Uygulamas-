@@ -1,16 +1,24 @@
-### Veri seti Kaggle'dan alınmıştır.
+### This dataset is taken from Kaggle.
+### This project is made with Python
+### Before you start you should install these requirements on your environment:
+- numpy
+- pandas
+- scikit-learn(sklearn)
 
-### Preproccesing İşlemleri
+## Aim of this project:
+This project aims to guess the rents of the houses in USA using regression and machine learning algorithms.
+
+### Preproccesing
 - Fit_transform
-- MinMaxScaler()
+- MinMaxScaler
 - Label Encoding
 
-### Kullanılan Algoritmalar
+### Algorithms used
 - RandomForestClassifier
 - KNeighborsClassifier
 
-## Sonuçlar
-# Random Forest 
+## Results
+### Random Forest 
                      precision    recall  f1-score   support
 
                0       0.81      0.83      0.82       405
@@ -20,7 +28,7 @@
     weighted avg       0.82      0.82      0.82       828
 
 
-# KNeighbors
+### KNeighbors
                     precision    recall  f1-score   support
 
              0         0.80      0.85      0.82       405
