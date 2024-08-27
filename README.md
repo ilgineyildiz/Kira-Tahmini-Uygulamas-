@@ -1,38 +1,46 @@
-### This dataset is taken from Kaggle.
-### This project is made with Python
-### Before you start you should install these requirements on your environment:
-- numpy
-- pandas
-- scikit-learn(sklearn)
+# USA Housing Dataset Machine Learning
+Project Description
+This project aims to apply various machine learning techniques on the USA Housing dataset. The dataset contains information about various housing features and is used to predict housing prices.
 
-## Aim of this project:
-This project aims to guess the rents of the houses in USA using regression and machine learning algorithms.
+## Dataset
+The dataset consists of 4140 rows and 18 columns, including various features such as price, number of bedrooms, number of bathrooms, living area size, lot size, and other relevant attributes.
 
-### Preproccesing
-- Fit_transform
-- MinMaxScaler
-- Label Encoding
+### Data Preprocessing
+Label Encoding: Categorical variables (e.g., date, street, city, state/ZIP code, country) are converted to numerical values using LabelEncoder.
+Feature Scaling: Features are scaled using MinMaxScaler to normalize the data and improve model performance.
+Splitting the Dataset: The dataset is split into training (70%), validation (15%), and test (15%) sets.
 
-### Algorithms used
-- RandomForestClassifier
-- KNeighborsClassifier
+### Machine Learning Models
+Linear Regression: A baseline model to predict housing prices using linear relationships between features.
+Decision Tree Regressor: A model to capture non-linear relationships and interactions between features.
+Random Forest Regressor: An ensemble method to improve prediction accuracy and robustness by combining multiple decision trees.
+Gradient Boosting Regressor: An advanced ensemble technique to boost model performance by sequentially correcting errors made by previous models.
 
-## Results
-### Random Forest 
-                     precision    recall  f1-score   support
+### Model Evaluation
+Models are evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared. The best-performing model is selected based on these evaluation metrics.
 
-               0       0.81      0.83      0.82       405
-               1       0.83      0.81      0.82       423
-    accuracy                               0.82       828
-    macro avg          0.82      0.82      0.82       828
-    weighted avg       0.82      0.82      0.82       828
+### Results
+Linear Regression: [Insert MAE, MSE, R-squared here]
+Decision Tree Regressor: [Insert MAE, MSE, R-squared here]
+Random Forest Regressor: [Insert MAE, MSE, R-squared here]
+Gradient Boosting Regressor: [Insert MAE, MSE, R-squared here]
 
+### Usage
+Clone the repository:
+git clone [repository-url]
 
-### KNeighbors
-                    precision    recall  f1-score   support
+Navigate to the project directory:
+cd [project-directory]
 
-             0         0.80      0.85      0.82       405
-             1         0.85      0.79      0.82       423
-    accuracy                               0.82       828
-    macro avg          0.82      0.82      0.82       828
-    weighted avg       0.82      0.82      0.82       828
+Install the required dependencies:
+pip install -r requirements.txt
+
+Run the main script:
+python main.py
+
+### Requirements
+Python 3.x
+pandas
+numpy
+scikit-learn
+matplotlib
